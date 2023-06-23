@@ -14,7 +14,7 @@ public class CalculadoraTeste {
         int resultadoPositivo = calculadora.multiplicaPorDois(2);
 
         //Assert(4 == calculadora.multiplicaPorDois(2));
-        assertEquals(7, calculadora.multiplicaPorDois(2));
+        assertEquals(4, calculadora.multiplicaPorDois(2));
 
         assertEquals(4, resultadoPositivo);
 
