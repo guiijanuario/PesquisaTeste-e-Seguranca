@@ -1,0 +1,189 @@
+Teste e Segurança
+Guilherme Januário
+Hellen Santos
+Meire Lopes
+Wellington Rodrigues
+Francisco Silva
+
+Tipos de segurança que existe para aplicação:
+Segurança de Nuvem: Busca proteger os servidores em nuvem e os
+dados armazenados nos sistemas distribuídos;
+Segurança de Rede:  Cuida dos equipamentos de rede e da
+comunicação da empresa com o mundo externo;
+Segurança do Parque: O que pode incluir cuidado com computadores
+alugados e próprios;
+Segurança Cibernética: Protege os arquivos, as aplicações;
+Segurança de APIs: Busca proteger as APIs;
+Cibersegurança: Segurança especificamente no digital
+
+
+Tipos de segurança utilizada em aplicação Java:
+Java Authentication and Authorization Service (JAAS): É uma API do Java que permite a autenticação e autorização de usuários em aplicativos Java. O JAAS fornece um conjunto de interfaces e classes que podem ser usadas para configurar e gerenciar políticas de segurança.
+
+Java Secure Socket Extension (JSSE): É uma API do Java que oferece suporte a comunicações seguras por meio de protocolos criptográficos, como SSL (Secure Sockets Layer) e TLS (Transport Layer Security). O JSSE permite a criação de conexões seguras entre aplicativos Java por meio do uso de certificados digitais e criptografia.
+
+Java Cryptography Architecture (JCA): É um framework fornecido pelo Java que oferece suporte à criptografia em aplicativos Java. Ele fornece uma API para criptografia simétrica e assimétrica, geração e gerenciamento de chaves, assinaturas digitais e outras operações criptográficas
+
+Java KeyStore (JKS): É um formato de arquivo usado para armazenar chaves criptográficas, certificados digitais e outras informações de segurança em Java. O JKS é frequentemente usado para armazenar certificados de servidor e clientes em projetos que envolvem comunicação segura.
+
+Spring Security: É uma estrutura de segurança amplamente utilizada em aplicativos Java baseados em Spring. O Spring Security fornece recursos abrangentes para autenticação, autorização, prevenção de ataques comuns, proteção contra CSRF (Cross-Site Request Forgery) e muito mais. 
+
+Criptografia
+A criptografia é um mecanismo de segurança e privacidade onde comunicações por texto, imagens, vídeo, etc, se tornam inacessíveis para quem não tem os códigos de tradução da mensagem. 
+
+Essa tecnologia utiliza cifragem dos dados para embaralhar as informações. Isso de forma que apenas aqueles que tenham a chave para descriptografar consigam acessar a informação original. 
+
+Ou seja, é a construção e análise de protocolos que impedem terceiros de lerem mensagens privadas.
+
+Qual a importância da criptografia?
+A grande importância se dá pela proteção da identidade e dos dados de todos os usuários. Se ocorrer uma tentativa de invasão, a criptografia protege todas as informações importantes.
+
+A grande necessidade de usar essa tecnologia está na proteção da identidade, se ocorrer uma invasão, o sistema irá proteger tudo, até mesmo mensagens trocadas.
+
+Tipos de criptografias:  Chave simétrica, DES (Data Encryption Standard), IDEA (International Data Encryption Algorithm), AES (Advanced Encryption Standard), Chave assimétrica. 
+
+O que é Autenticação?
+A autenticação é um dos diversos processos de segurança cibernética utilizados por empresas para proteger os ativos corporativos. 
+
+O objetivo é confirmar a identidade dos usuários antes de conceder acesso, com a autorização, os usuários recebem permissão para acessar determinados recursos e informações. 
+
+Essa camada de segurança é uma maneira de oferecer acesso privilegiado aos funcionários, sem deixar de controlar o acesso a recursos críticos.
+
+O que é Autorização?
+Enquanto a autenticação é como a chave que destranca uma porta para o usuário, a autorização exige o estabelecimento de camadas de segurança cibernética para liberar ou restringir determinadas áreas do outro lado da porta.
+
+Com a autorização, os usuários recebem permissão para acessar determinados recursos e informações. 
+
+Essa camada de segurança é uma maneira de oferecer acesso privilegiado aos funcionários, sem deixar de controlar o acesso a recursos críticos.
+
+
+
+Qual a diferença entre autenticação e autorização?
+A verdade é que as duas trabalham lado a lado. 
+
+A autenticação confirma que os usuários são quem dizem ser, validando suas identidades. 
+
+Já a autorização concede a esses usuários autenticados permissão para acessar recursos. 
+
+Quando combinadas, elas reforçam a segurança de cada endpoint da empresa, garantindo que todos os dados fiquem protegidos.
+
+Exemplo de Segurança no código:
+
+Qual a importância dos testes unitários?
+Identificar e corrigir erros precocemente: Os testes unitários permitem detectar problemas de funcionalidade ou regressões assim que são introduzidos no código, evitando que se propaguem para outras partes do sistema.
+
+Facilitar a refatoração: Com testes unitários abrangentes, você pode realizar alterações no código com mais confiança. Se os testes continuarem a passar após a refatoração, você tem maior garantia de que não introduziu erros no processo.
+
+
+Documentar o código: Os testes unitários servem como uma forma de documentação viva do comportamento esperado do código. Eles mostram como o código deve ser usado e quais resultados ele deve produzir em diferentes situações.
+
+Melhorar a qualidade do código: A escrita de testes unitários incentiva boas práticas de desenvolvimento, como modularidade, baixo acoplamento e alta coesão. Isso resulta em código mais limpo, legível e de melhor qualidade.
+
+Exemplo de Teste Unitário
+
+Framework JUnit
+JUnit é um framework de teste unitário para Java. Ele permite que desenvolvedores Java criem e executem testes automatizados de unidade para sua aplicação.
+
+Algumas características principais do JUnit:
+
+Facilidade de uso: O JUnit fornece uma API simples com anotações como @Test, @Before, @After para organizar testes. 
+
+Asserções: O JUnit provê várias asserções como Assert.assertEquals(), Assert.assertTrue() e outras para validar os resultados dos testes
+
+Execução de testes: O JUnit executa todos os testes automaticamente e fornece resultados de falha/sucesso. 
+
+Agrupamento de testes: Os testes podem ser agrupados em suites usando as anotações @RunWith e @Suite. 
+
+Integração com IDEs: O JUnit pode ser executado diretamente de dentro do Eclipse, IntelliJ e outras IDEs. 
+
+Compatibilidade com outras ferramentas: O JUnit é compatível com ferramentas como Maven, Ant, Jenkins, etc. 
+
+Relatórios detalhados: Fornece relatórios detalhados sobre quais testes falharam e porque. 
+
+O que são testes automatizados?
+Testes automatizados são testes de software executados de forma automática, sem a necessidade de intervenção manual. 
+Eles são projetados para verificar se o software está funcionando corretamente, detectar possíveis erros ou regressões e garantir que as alterações feitas no código não introduzam novos problemas. 
+São criados usando frameworks e ferramentas de teste que permitem definir casos de teste, executá-los e verificar automaticamente os resultados. 
+Esses testes são escritos como código e podem ser executados repetidamente durante o ciclo de desenvolvimento do software. 
+
+Os principais tipos de testes automatizados são: 
+
+Testes unitários: Testam unidades individuais (funções, métodos) de isolamento. 
+
+Testes de integração: Testam a integração entre módulos. 
+
+Testes funcionais: Testam funcionalidades reais passo a passo executando ações e verificando seus resultados. 
+
+Teste de carga e de estresse: executam muitas requisições simultâneas para verificar a capacidade do sistema. 
+
+
+
+O que é Mockito?
+Mockito é uma biblioteca para Java utilizada para criar objetos mock (simulação) para testes unitários. 
+
+Usado principalmente para testar de forma isolada uma classe ou método específico e de forma independente.
+
+Tendo algumas funcionalidades como: 
+
+Criação de objetos mock : na qual pode se criar versões simuladas de objetos reais e testar. 
+Verificar chamadas: verifica se métodos foram chamados no objeto mock da forma esperada e com os parâmetros corretos. 
+
+Baseado em interfaces: permitindo que faça testes em classes sem acoplamento. 
+Preenchimento de retornos: configurando o mock de forma que ele retorne valores específicos quando chamar métodos. 
+
+Objetos mock são criados em tempo de execução, sem alterar classes em produção. 
+
+Basicamente, o Mockito facilita a escrita de testes unitários ao permitir que você crie versões simplificadas de objetos dependentes para isolar e testar
+
+Teste unitário com Mockito
+
+
+Nos próximos slides você encontra alguns recursos para as suas apresentações. 
+
+Esses slides estão ocultos. Se preferir, é só deletar depois que terminar de montar a sua apresentação.
+Recursos gráficos
+
+
+
+
+
+
+Zuples
+Traços de respingos
+
+Zuples | exemplos
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+
+Stickers astronautas NASA
+
+Banco de Imagens 
+Unsplash
+Pexels
+Drive Zup
+Freepik
+Pixabay
+
+Ícones/Ilustras
+Noun Project
+UnDraw
+Icons8
+Freepik
+Ícones Zup
+Gifs
+Giphy 
+Edição de gif
+
+Edição:
+Photopea
+Remove Background
+
+Ferramentas:
+
+< Templates >
+
+
+
+
+
+
