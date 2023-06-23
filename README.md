@@ -13,9 +13,6 @@
 - O que são testes automatizados?
 - O que é Mockito?
 - Mostre um exemplo de testes unitários utilizando o Mockito.
-<p>Link - vou colocar depois </p>
-
-</br>
 
 ---
 
